@@ -13,7 +13,6 @@ public class Selenium_test {
         WebDriver driver = new ChromeDriver();
 
         // 3- Test if the driver is working fine
-
         driver.get("https://www.youtube.com");
 
 
