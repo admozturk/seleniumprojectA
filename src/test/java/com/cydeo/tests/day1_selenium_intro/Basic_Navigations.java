@@ -16,7 +16,7 @@ public class Basic_Navigations {
         // Go to tesla.com
         driver.get("https://www.tesla.com");
 
-        //// gets the title method gets the title of the page and "returns as a String"
+        // gets the title method gets the title of the page and "returns as a String"
         String currentTitle= driver.getTitle();
         System.out.println("currentTitle = " + currentTitle);
 
