@@ -80,6 +80,16 @@ public class Basic_Navigations {
         System.out.println("currentURl = " + currentURl);
 
 
+        // this will close only the currently opened window
+        driver.close();
+
+
+       // if we have more than one window opened this will close all the windows that are opened previously
+        // it terminates the current session. we will get "noSuchSessionExceptions"
+        driver.quit();
+
+
+
 
 
 
