@@ -31,8 +31,8 @@ public class Task1_Yahoo_TitleVerification {
         String expectedTitle = "Yahoo fait partie de la famille de marques Yahoo.";
 
         // compare expected title with current title
-        String curentTitle = driver.getTitle();
-        if (curentTitle.equals(expectedTitle)){
+        String currentTitle = driver.getTitle();
+        if (currentTitle.equals(expectedTitle)){
             System.out.println("Title is as expected. Verification done successfully");
         }else{
             System.out.println("Title is NOT as expected. Verification FAILED");
