@@ -7,8 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Task3_Google_Search {
-
+public class Task6_Google_search {
     public static void main(String[] args) {
         //TC#3: Google search
         //1- Open a Chrome browser
@@ -21,6 +20,7 @@ public class Task3_Google_Search {
 
         //3- Write “apple” in search box
         //4- PRESS ENTER using Keys.ENTER
+        driver.findElement(By.xpath("/html/body/div[2]/div[2]/div[3]/span/div/div/div/div[3]/div[1]/button[2]/div")).click();
         WebElement googleSearchBox = driver.findElement(By.name("q"));
         googleSearchBox.sendKeys("apple" + Keys.ENTER);
 
@@ -29,17 +29,10 @@ public class Task3_Google_Search {
         String expectedInTitle = "apple";
         String actualTitle = driver.getTitle();
 
-        if (actualTitle.startsWith(expectedInTitle)){
+        if (actualTitle.startsWith(expectedInTitle)) {
             System.out.println("Title verification PASSED!");
-        }else{
+        } else {
             System.out.println("Title verification FAILED!!!");
         }
-
-
-
-
-
-
-
     }
 }
