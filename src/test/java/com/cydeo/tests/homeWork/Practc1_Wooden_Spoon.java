@@ -14,6 +14,7 @@ public class Practc1_Wooden_Spoon {
        //  2. Go to https://www.etsy.com
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
         driver.get("https://www.etsy.com");
 
 
