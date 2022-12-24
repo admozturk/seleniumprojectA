@@ -16,8 +16,6 @@ public class Prctc5_Facebook {
         driver.get("https://www.facebook.com");
 
 
-
-
        // 3. Verify title:
        // Expected: “Facebook - Log In or Sign Up”
         String expectedTitle = "Facebook - log in or sign up";

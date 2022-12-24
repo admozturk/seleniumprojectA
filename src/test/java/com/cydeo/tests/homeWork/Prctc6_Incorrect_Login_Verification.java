@@ -2,6 +2,7 @@ package com.cydeo.tests.homeWork;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -27,7 +28,7 @@ public class Prctc6_Incorrect_Login_Verification {
 
         //4. Enter incorrect password
         WebElement verifyUserPassword = driver.findElement(By.name("pass"));
-        verifyUserPassword.sendKeys("123456789");
+        verifyUserPassword.sendKeys("123456789"+ Keys.ENTER);
 
         //5. Verify title changed to:
            //Expected: “Log into Facebook”
@@ -40,11 +41,6 @@ public class Prctc6_Incorrect_Login_Verification {
             System.out.println("Verification is FAILED!!");
         }
 
-
-        Thread.sleep(2000);
-
-      // press login button
-     driver.findElement(By.xpath("(//button[normalize-space()='Log In'])[1]")).click();
 
 
 
