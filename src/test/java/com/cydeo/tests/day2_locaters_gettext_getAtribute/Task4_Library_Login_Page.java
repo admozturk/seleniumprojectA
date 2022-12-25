@@ -1,18 +1,18 @@
-package com.cydeo.tests.locaters_gettext_getAtribute;
+package com.cydeo.tests.day2_locaters_gettext_getAtribute;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+import com.cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Task4_Library_Login_Page {
     public static void main(String[] args) {
       // TC #4: Library verifications
       // 1. Open Chrome browser
       // 2. Go to http://library2.cybertekschool.com/login.html
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
+       // WebDriverManager.chromedriver().setup();
+       // WebDriver driver = new ChromeDriver();
+        WebDriver driver = WebDriverFactory.getDriver("firefox");
         driver.navigate().to("https://library2.cybertekschool.com/login.html");
 
 
