@@ -15,7 +15,6 @@ public class Task5_CssSelector_Xpath {
         driver.navigate().to("https://login1.nextbasecrm.com/?forgot_password=yes");
 
 
-
         // 3- Enter incorrect username into login box:
         WebElement usernameVerification = driver.findElement(By.cssSelector("input[class='login-inp']"));
         usernameVerification.sendKeys("admoztrk");
@@ -24,7 +23,7 @@ public class Task5_CssSelector_Xpath {
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
-           e.getMessage();
+            e.getMessage();
         }
         driver.findElement(By.xpath("//*[@id=\"login-popup\"]/form/div[4]/button")).click();
         try {
@@ -41,15 +40,12 @@ public class Task5_CssSelector_Xpath {
         String actualtedErrorMessage = verifyErrorLabel.getText();
         if (actualtedErrorMessage.equals(expectedErrorMessage)) {
             System.out.println("PASSED!");
-        }else{
+        } else {
             System.out.println("FAILED!!!");
         }
 
         /*PS: Inspect and decide which locator you should be using to locate web elements.
           PS2: Pay attention to where to get the text of this button from*/
-
-
-
 
 
     }
