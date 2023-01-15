@@ -13,7 +13,7 @@ public class ReadingProperties {
         // - Create the object of Properties classes
         Properties properties = new Properties();
 
-        // We need to open the file in java memory using= FileInputStream
+        // We need to open the file as a stream in java memory using= FileInputStream
         FileInputStream file = new FileInputStream("configuration.properties");
 
         // Load the properties object using FileInputStream object
